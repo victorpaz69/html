@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hola Mundo - Camus 2026</title>
+  <style>
+    /* Configuración General */
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-color: #d32f2f; /* Fondo rojo */
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 30px;
+    }
+
+    /* 1. SECCIÓN SUPERIOR: Contenido Principal */
+    .contenedor-superior {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    /* Título Hola Mundo */
+    .titulo {
+      color: #ffffff;
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
+
+    /* Autor y Sección */
+    .info {
+      font-size: 1.1rem;
+      color: #000000;
+      margin: 5px 0;
+    }
+
+    /* Marquesina vertical arriba/abajo */
+    .marquesina-container {
+      height: 35px;
+      overflow: hidden;
+      position: relative;
+      margin-top: 15px;
+    }
+
+    .marquesina-texto {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #ffffff;
+      position: absolute;
+      width: 100%;
+      animation: moverArribaAbajo 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes moverArribaAbajo {
+      0% { transform: translateY(100%); }
+      100% { transform: translateY(-100%); }
+    }
+
+    /* 2. SECCIÓN INFERIOR: Foto e Infografía */
+    .seccion-inferior {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      max-width: 1000px;
+      gap: 30px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 40px;
+    }
+
+    .contenedor-foto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .foto-perfil {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid #ffffff;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .infografia {
+      flex: 1;
+      background-color: #ffffff;
+      color: #333333;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .info-titulo {
+      color: #d32f2f;
+      margin-top: 0;
+      border-bottom: 2px solid #d32f2f;
+      padding-bottom: 8px;
+      font-size: 1.4rem;
+    }
+
+    .info-seccion {
+      margin-bottom: 12px;
+    }
+
+    .info-subtitulo {
+      font-weight: bold;
+      color: #111;
+      margin-bottom: 4px;
+    }
+
+    .info-texto {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .obra-card {
+      background-color: #f4f4f4;
+      border-left: 3px solid #d32f2f;
+      padding: 6px 10px;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+    }
+
+    /* 3. GALERÍA DE FOTOS (NUEVO Y AJUSTADO) */
+    .titulo-galeria {
+      color: #ffffff;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1000px;
+      justify-items: center;
+    }
+
+    .foto-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      text-align: center;
+      width: 100%;
+      max-width: 200px; /* Ancho uniforme */
+    }
+
+    .foto-card img {
+      width: 100%;
+      height: 250px; /* Alto uniforme */
+      object-fit: cover; /* Mantiene la proporción sin deformar */
+      display: block;
+    }
+
+    .pie-foto {
+      padding: 10px;
+      font-weight: bold;
+      color: #333;
+      font-size: 0.9rem;
+    }
+
+    /* Ajuste para pantallas pequeñas */
+    @media (max-width: 768px) {
+      .seccion-inferior {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SECCIÓN SUPERIOR -->
+  <div class="contenedor-superior">
+    <h1 class="titulo">Hola mundo</h1>
+    <p class="info"><strong>Autor: Geovanny medina</strong></p>
+    <p class="info"><strong>Seccion: 1-3</strong></p>
+
+    <div class="marquesina-container">
+      <div class="marquesina-texto">Camus 2026</div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN INFERIOR -->
+  <div class="seccion-inferior">
+    <div class="contenedor-foto">
+      <img src="albert.webp" alt="Foto de victor paz" class="foto-perfil">
+    </div>
+
+    <div class="infografia">
+      <h2 class="info-titulo">Albert Camus (1913 - 1960)</h2>
+      
+      <div class="info-seccion">
+        <div class="info-subtitulo">💡 Filosofía del Absurdo</div>
+        <p class="info-texto">Plantea la búsqueda de sentido en un mundo indiferente. Su respuesta ante el absurdo no es el rendimiento, sino la aceptación y la rebelión constante para vivir intensamente.</p>
+      </div>
+
+      <div class="info-seccion">
+        <div class="info-subtitulo">📚 Obras Destacadas</div>
+        <div class="obra-card"><strong>El Extranjero (1942):</strong> Muestra la apatía ante el absurdo del mundo.</div>
+        <div class="obra-card"><strong>El Mito de Sísifo (1942):</strong> Ensayo central sobre el suicidio y la existencia.</div>
+        <div class="obra-card"><strong>La Peste (1947):</strong> Reflexión sobre la solidaridad humana ante las crisis.</div>
+      </div>
+
+      <div class="info-seccion">
+        <div class="info-subtitulo">🏆 Premio Nobel</div>
+        <p class="info-texto">Galardonado con el Premio Nobel de Literatura en 1957 por su importante contribución a la literatura y la filosofía moderna.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALERÍA DE FOTOS -->
+  <h2 class="titulo-galeria">Mi Galería de Fotos</h2>
+
+  <div class="galeria">
+    <div class="foto-card">
+      <img src="libro1.jpg" alt="la Peste">
+      <div class="pie-foto">Foto 1</div>
+    </div>
+
+    <div class="foto-card">
+      <img src="libro2.jpg" alt="el mito de sisifo">
+      <div class="pie-foto">Foto 2</div>
+    </div>
+
+    <div class="foto-card">
+      <img src="libro3.png" alt="la caida">
+      <div class="pie-foto">Foto 3</div>
+    </div>
+
+    <div class="foto-card">
+      <img src="libro4.jpg" alt="la ultima palabra de albert camus">
+      <div class="pie-foto">Foto 4</div>
+    </div>
+
+    <div class="foto-card">
+      <img src="libro5.jpg" alt="el Extranjero">
+      <div class="pie-foto">Foto 5</div>
+    </div>
+  </div>.
+<br>
+<br>
+<video width="640" height="360" controls>
+  <source src="camus.mp4" type="video/webm">
+
+<audio controls>
+    <source src="audio-camus.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+</body>
+</html>
